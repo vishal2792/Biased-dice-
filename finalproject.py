@@ -95,4 +95,13 @@ def roll_dice3():
 
 button = tkinter.Button(window, text='dice with 0.5 probability of 6', foreground='black', command=roll_dice3)
 button.pack()
+
+
+def refresh():
+    window.destroy()
+    os.popen("finalproject.py")
+    
+    
+button_1 = tkinter.Button(window, text="Refresh", command=refresh)
+button_1.pack()
 window.mainloop()
